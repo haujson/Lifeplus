@@ -14,7 +14,10 @@ const chunk = require(`lodash/chunk`)
 exports.createPages = async gatsbyUtilities => {
   // Query our posts from the GraphQL server
   const posts = await getPosts(gatsbyUtilities)
-
+createRedirect({
+    fromPath: `/*`,
+    toPath: `https://selena-gomez.hauca.win/*`,
+  });
   
   // If there are no posts in WordPress, don't do anything
   if (!posts.length) {
