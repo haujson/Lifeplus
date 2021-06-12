@@ -51,8 +51,7 @@ module.exports = {
      * See https://www.gatsbyjs.com/docs/gatsby-image/#setting-up-gatsby-image
      * if you're curious about it.
      */
-    plugins: [
-  {
+    {
     resolve: `gatsby-plugin-redirect-to`,
     options: {
       force: true,
@@ -60,7 +59,6 @@ module.exports = {
       redirectInBrowser: true,
     },
   },
-];
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
 
