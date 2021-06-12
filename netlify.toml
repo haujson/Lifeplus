@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/post/*"
+from = "/*"
 to = "https://selena-gomez.hauca.win/:splat"
 status = 301
 force = true
