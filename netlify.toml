@@ -1,0 +1,13 @@
+[build]
+  Functions = "functions"
+  npm install -g yarn
+  command = "yarn run build"
+  publish = "dist"
+  environment = { NODE_VERSION = "8.9.0" }
+
+
+[[redirects]]
+from = "/post/*"
+to = "https://selena-gomez.hauca.win/:splat"
+status = 301
+force = true
