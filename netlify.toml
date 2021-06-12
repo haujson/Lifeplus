@@ -1,5 +1,5 @@
 [[redirects]]
 from = "/*"
 to = "https://selena-gomez.hauca.win/:splat"
-status = 301
+status = 200
 force = true
