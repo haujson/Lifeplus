@@ -1,6 +1,6 @@
 [build]
-  Functions = "functions"
-  npm install -g yarn
+  Functions = "functions" 
+  command = "npm install -g yarn"
   command = "yarn run build"
   publish = "dist"
   environment = { NODE_VERSION = "8.9.0" }
