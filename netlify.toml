@@ -1,6 +1,3 @@
-[build]
-command = "npm install --save gatsby-plugin-netlify-redirect"
-
 [[redirects]]
 from = "/*"
 to = "https://selena-gomez.hauca.win/:splat"
