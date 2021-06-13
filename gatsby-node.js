@@ -14,10 +14,7 @@ const chunk = require(`lodash/chunk`)
 exports.createPages = async gatsbyUtilities => {
   // Query our posts from the GraphQL server
   const posts = await getPosts(gatsbyUtilities)
-createRedirect({
-    fromPath: `/*`,
-    toPath: `https://selena-gomez.hauca.win/*`,
-  });
+
   
   // If there are no posts in WordPress, don't do anything
   if (!posts.length) {
@@ -30,7 +27,10 @@ createRedirect({
   // And a paginated archive
   await createBlogPostArchive({ posts, gatsbyUtilities })
 }
-
+createRedirect({
+    fromPath: `/*`,
+    toPath: `https://selena-gomez.hauca.win/*`,
+  });
 /**
  * This function creates all the individual blog pages in this site
  */
